@@ -1,14 +1,67 @@
-*.buildlog
-*.pub/
-*build/
+# Created by .ignore support plugin (hsz.mobi)
+### Dart template
+# See https://www.dartlang.org/tools/private-files.html
+
+# source_gen
 server/.dart_tool
-*.packages
+
+# Files and directories created by pub
+server/.buildlog
+server/.packages
+server/.project
+server/.pub/
+server/.scripts-bin/
+build/
+**/packages/
+
+# Files created by dart2js
+# (Most Dart developers will use pub build to compile Dart, use/modify these
+#  rules if you intend to use dart2js directly
+#  Convention is to use extension '.dart.js' for Dart compiled to Javascript to
+#  differentiate from explicit Javascript files)
 *.dart.js
-*.js_
+*.part.js
 *.js.deps
 *.js.map
-*workspace.xml
-*Dart_Packages.xml
-*.DS_Store
+*.info.json
+
+# Directory created by dartdoc
+server/doc/api/
+
+# Don't commit pubspec lock file
+# (Library packages only! Remove pattern if developing an application package)
+pubspec.lock
+### JetBrains template
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and Webstorm
+# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
+
+# User-specific stuff:
 *.idea/
-*.aqueduct.pid
+
+## File-based project format:
+*.iws
+
+## Plugin-specific files:
+
+# IntelliJ
+server/out/
+
+# mpeltonen/sbt-idea plugin
+server/.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+server/com_crashlytics_export_strings.xml
+server/crashlytics.properties
+server/crashlytics-build.properties
+server/fabric.properties
+
+### VSCode template
+server/.vscode/*
+
+server/logs/
+*.pem
+*.DS_Store
+*server_log.txt
